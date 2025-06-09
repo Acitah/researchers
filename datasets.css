@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.space{
+    height: 100px;
+}
+.main-content{
+    margin-top: 20px;
+}
+.links p{
+    font-size: 30px;
+    font-weight: 100;
+   
+}
+.dataset-container{
+    display: block;
+    border-radius: 10px;
+    border-style: groove;
+    margin: 20px;
+}
+.dataset{
+    margin: 10px;
+    display: flex;
+    gap: 2rem;
+    border-style:ridge;
+    border-radius: 10px;
+}
+.dataset img{
+    height: 100px;
+}

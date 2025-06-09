@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasets</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="datasets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header-placeholder"></div>
+        <div class="main-content">
+            <div class="space"></div>
+            <div class="links">
+                <p>Take a look at various published datasets created by our team...</p>
+            </div>
+            <div class="dataset-container">
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+                <div class="dataset">
+                    <div class="img">
+                        <img src="download-1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Sickle cell dataset</p>
+                        <a href="#">link to kaggle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+            fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+        <script src="header.js"></script>
+    <script>
+            fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        initializeHeader();
+    });
+    </script>
+</body>
+</html>

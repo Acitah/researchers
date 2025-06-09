@@ -1,0 +1,82 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.space{
+  height: 100px;
+}
+.main-content{
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+h3{
+  font-size: 50px;
+}
+.member-card {
+  width: 260px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+ 
+}
+
+.member-card img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.member-card h3 {
+  text-align: center;
+  margin: 12px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.member-info {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.member-card.expanded .member-info {
+  max-height: 500px;
+  padding-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* Change this depending on the platform */
+}
+@media (max-width:900px) {
+  h3{
+    font-family: 30px
+  }
+}

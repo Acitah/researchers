@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aidatlab</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header-placeholder"></div>
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="vid1.mp4" type="video/mp4">
+            </video>
+            
+            <div class="hero-content">
+                <h2>Artificial Intelligence and Data Analysis Technlogies Lab</h2>
+                <p>Join researchers worldwide in advancing AI innovation.</p>
+            </div>
+        </div>
+        <!--body-->
+        <div class="main-content">
+            <section class="about" id="About">
+                <h6>About Us</h6>
+                <div class="ceo">
+                    <div class="ceo-img">
+                        <img src="dp.jpeg" alt="founder">
+                        <h2>Dr. Eleanor M. Bennett</h2>
+                        <hr>
+                    </div>
+                    <div class="ceo-content">
+                        <h4>Chief Executive Officer – Researcher Portal Group</h4>
+                        <p>
+                            Dr. Eleanor M. Bennett is the visionary founder and CEO of the Researcher Portal Group. With over 15 years of experience in scientific research and academic leadership, she has been instrumental in shaping the platform into a global hub for collaboration and knowledge sharing.
+                        </p>
+                        <p>
+                            She holds a Ph.D. in Biomedical Informatics from the University of Oxford and has authored numerous publications in the fields of healthcare technology and data-driven research. Her mission is to bridge the gap between researchers across disciplines and promote open-access scientific advancement.
+                        </p>
+                        <blockquote><i>
+                            “The future of science lies not just in discovery, but in how we share, connect, and empower one another to think bigger.”
+                        </i>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </section>
+            <!--Contact Us-->
+            <section id="Contact" class="contact-section">
+                <div class="contain">
+                    <div class="section-header">
+                        <h2 class="section-title">Get In <span>Touch</span></h2>
+                        <p class="section-subtitle">We'd love to hear about your project</p>
+                    </div>
+                    
+                    <div class="contact-content"> 
+                        <div class="call">
+                            <div class="tel">
+                                <i class="fa fa-phone" alt="call"></i>
+                                <hr>
+                                <p><a href="0706045241">0706045241</a></p>
+                            </div>
+                            <div class="tel">
+                                <i class="fa fa-envelope" alt="g-mail"></i>
+                                <hr>
+                                <p><a href="aidatlab2@gmail.com">aidatlab2@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                                </div>
+    
+                                <div class="form-group">
+                                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+                fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    
+    <script src="header.js"></script>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+      initializeHeader(); // <-- only call after header is inserted
+    });
+</script>
+
+</body>
+</html>

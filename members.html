@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="members.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="page-wrapper">
+        <div id="header-placeholder"></div>
+        <div class="main-content">
+            <div class="space"></div>
+            <div class="members">
+                    <h3>Meet Our Team...</h3>
+                </div>
+            <div class="members-container">
+                
+                <div class="member-card">
+                    <img src="dp.jpeg" alt="Member Photo" />
+                    <h3>Dr. Jane Doe</h3>
+            
+                    <div class="member-info">
+                        <p>Role: Lead Researcher</p>
+                        <p>Expert in AI and Data Science with over 10 years of experience...</p>
+                
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/example" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://researchgate.net/profile/example" target="_blank"><i class="fas fa-flask"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="dp.jpeg" alt="Member Photo" />
+                    <h3>Dr. Jane Doe</h3>
+            
+                    <div class="member-info">
+                        <p>Role: Lead Researcher</p>
+                        <p>Expert in AI and Data Science with over 10 years of experience...</p>
+                
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/example" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://researchgate.net/profile/example" target="_blank"><i class="fas fa-flask"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="dp.jpeg" alt="Member Photo" />
+                    <h3>Dr. Jane Doe</h3>
+            
+                    <div class="member-info">
+                        <p>Role: Lead Researcher</p>
+                        <p>Expert in AI and Data Science with over 10 years of experience...</p>
+                
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/example" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://researchgate.net/profile/example" target="_blank"><i class="fas fa-flask"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="dp.jpeg" alt="Member Photo" />
+                    <h3>Dr. Jane Doe</h3>
+            
+                    <div class="member-info">
+                        <p>Role: Lead Researcher</p>
+                        <p>Expert in AI and Data Science with over 10 years of experience...</p>
+                
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/example" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://researchgate.net/profile/example" target="_blank"><i class="fas fa-flask"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-placeholder"></div>
+    </div>
+    <script>
+            fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+        });
+        </script>
+        <script src="header.js"></script>
+        <script>
+            fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        initializeHeader();
+        });
+        </script>
+    <script src="members.js"></script>
+</body>
+</html>
