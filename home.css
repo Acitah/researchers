@@ -3,7 +3,8 @@ html, body{
     margin: 0px;
     display: block;
     justify-content: center;
-     
+     font-size: 20px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #e4e2e2;
 }
 * {
@@ -13,7 +14,7 @@ html, body{
 /*video*/
 .video-container {
   position: relative;
-  height: 400px;
+  height: 100vh;
   max-height: fit-content;
   display: flex;
   flex-direction: column;
@@ -43,12 +44,12 @@ html, body{
   pointer-events: auto;
 }
 .hero-content h2 {
-  font-size: 90px;
+  font-size: 50px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 .hero-content p {
-  font-size: 18px;
+  font-size: 24px;
 }
 @media (max-width: 900px) {
   .hero-content h2 {
@@ -78,21 +79,28 @@ html, body{
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin-top: 20px;
 }
 .about h6{
-  font-size: 20px;
+  font-size: 40px;
+  margin: 0;
 }
 
 .us{
   display: flex;
   padding: 30px;
-  gap: 20px;
-}
-.prospects {
-  text-align: start;
-  margin: 0 10px;
+  gap: 10px;
 }
 
+.prospects {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 10px;
+}
+.prospects p{
+  text-align: left;
+}
 .values {
   margin-top: 20px;
 }
@@ -109,7 +117,7 @@ html, body{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px 25px;
   overflow: hidden;
-  max-height: 60px; 
+  max-height: 80px; 
   transition: max-height 0.5s ease, transform 0.4s ease, box-shadow 0.3s ease, padding 0.3s ease;
   padding: 15px;
   cursor: pointer;
@@ -143,32 +151,52 @@ html, body{
 }
 
 .value:hover .dot {
-  opacity: 0;
+  opacity: 1;
 }
 
 .ceo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 25px;
     
     border-radius: 10px;
-    background-color: rgb(99, 81, 59);
+    background-color: rgb(245, 244, 243);
     box-shadow: 31px 31px 43px 0 rgba(151, 140, 126, 0.6);
     
 }
+
+.ceo-img {
+  width: 100%; /* or 100%, depending on layout */
+  text-align: center;
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ceo h4{
+  font-size: 30px;
+}
+.im {
+  width: 50%;
+  height: 300px; /* or adjust as needed */
+  overflow: hidden;
+  border-radius:50%; /* optional for rounded image corners */
+}
+
+.im img {
+  width: 100%;
+  height: 60%0%;
+  object-fit: cover;
+  display: block;
+}
 hr{
-    display: none;
-}
-.ceo img{
-    object-fit: cover;
-    border-radius: 50%;
-}
-.ceo-img{
-    display: block;
-    align-items: center;
-}
+        display: flex;
+        width: 60%;
+    }
 @media (max-width:900px){
   .us{
     display: block;
@@ -223,7 +251,7 @@ justify-content: center;
  align-items: flex-start;
  width: 100%;
  gap: 20px;
- max-width: 800px;
+
   padding: 20px;
 margin: 0 auto;
 border-radius: 10px;
@@ -248,10 +276,10 @@ border-radius: 10px;
   background-color: #f0f0f3;
   box-shadow: 0 15px 30px rgba(#f0f0f0 0.1);
   border-radius: 10px 25px;
-  padding: 10px;
+  padding: 20px 10px;
   width: 90%;
   transition: all 0.3s ease;
- height: 100px;
+ 
   
 }
 .tel:hover {
@@ -275,7 +303,8 @@ border-radius: 10px;
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  
 }
 
 
@@ -288,9 +317,10 @@ border-radius: 10px;
 .form-group textarea {
     margin: 10px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     border: none;
-    border-radius: 4px;
+    height: 50px;
+    border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     
 }
@@ -299,7 +329,6 @@ border-radius: 10px;
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-   
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
@@ -307,18 +336,32 @@ border-radius: 10px;
     resize: vertical;
     min-height: 120px;
 }
+button{
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 button:hover {
-  background-color: #009e87;
+  background-color: #8fe4f0;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
   .contact-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .call, .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    
   }
 }

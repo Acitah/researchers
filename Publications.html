@@ -14,6 +14,55 @@
     <div class="page-wrapper">
         <div id="header-placeholder"></div>
         <div class="main-content">
+            <h2>A section of our Peer-reviewed journals articles, conference papers, and technical reports </h2>
+            <div class="content">
+                <div class="card">
+                    <p>Gene selection and classification of pancreatic Microarray datasets, Signal processing and
+                    communications applications conference. 2017, 25th Signal Processing and Communications
+                    Applications Conference (SIU)</p>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/7960251"><span>
+                        <i class="fa fa-external-link"></i>
+                        <p>View Paper</p></span></a>    
+                </div>
+                <div class="card">
+                    <p>2. Investigating the effect of different feature selection strategies for the classification of gene
+                        expression signatures of tumour cells. 2017, International Symposium on Health Informatics and
+                        Bioinformatics, (HIBIT),
+                        </p>
+                        <a href="http://hibit2017.ii.metu.edu.tr/posters/"><span>
+                        <i class="fa fa-external-link"></i>
+                        <p>View Paper</p></span></a>        
+                </div>
+                <div class="card">
+                    <p>3. Sserwadda, A., Ozcan, A. and Yaslan, Y. (2022). Hierarchical and Centrality driven Polypharmacy
+                        Side Effect Prediction Model, 2022 7th
+                        International Conference on Computer Science and Engineering (UBMK),
+                        IEEE, pp.384–387.
+                        </p>
+                        <a href="https://ieeexplore.ieee.org/document/9919451"><span>
+                        <i class="fa fa-external-link"></i>
+                        <p>View Paper</p></span></a>                         
+                </div>
+                <div class="card">
+                    <p>4. Topology-Guided Cyclic Brain Connectivity Generation using Geometric Deep Learning, Nov 2020,
+                         Journal of Neuroscience Methods
+                        </p>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0165027020304118?via%3Dihub"><span>
+                        <i class="fa fa-external-link"></i>
+                        <p>View Paper</p></span></a>      
+                </div>
+                <div class="card">
+                    <p>6. Sserwadda, A., Ozcan, A. and Yaslan, Y. (2023). Structural and topological
+                        guided GCN for link prediction in temporal networks, Journal of Ambient
+                        Intelligence and Humanized Computing, 1–9.
+                        </p>
+                    <a href="https://link.springer.com/article/10.1007/s12652-023-04639-0"><span>
+                        <i class="fa fa-external-link"></i>
+                        <p>View Paper</p></span>
+                    </a>  
+                </div>
+              
+            </div>
             
         </div>
         <div id="footer-placeholder"></div>
@@ -26,11 +75,13 @@
             document.getElementById('footer-placeholder').innerHTML = data;
         });
         </script>
-         <script>
+            <script src="header.js"></script>
+        <script>
             fetch('header.html')
             .then(response => response.text())
             .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
+            initializeHeader();
         });
         </script>
 </body>
