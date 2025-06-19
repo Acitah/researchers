@@ -68,7 +68,7 @@ html, body{
     padding: 10px;
   }
   .video-container{
-    min-height: 80vh;
+    min-height: 100vh;
   }
   
 }
@@ -221,6 +221,10 @@ hr{
   }
   .value-cards{
     display: block;
+    
+  }
+  .value:hover{
+    margin-top: 15px;
   }
 }
 @media (max-width:1200px){ 
