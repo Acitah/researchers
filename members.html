@@ -20,7 +20,7 @@
                 </div>
             <div class="members-container">
 
-                <div class="member-card">
+                <div class="member-card" onclick="toggleInfo(this)">
                     <img src="p2.jpg" alt="Member Photo" />
                     <h3>Rachel Anirwoth</h3>
             
@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="member-card">
+                <div class="member-card" onclick="toggleInfo(this)">
                     <img src="p2.jpg" alt="Member Photo" />
                     <h3>Najib Mayanja</h3>
             
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="member-card">
+                <div class="member-card" onclick="toggleInfo(this)">
                     <img src="p2.jpg" alt="Member Photo" />
                     <h3>Juliet Natabona</h3>
             
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="member-card">
+                <div class="member-card" onclick="toggleInfo(this)">
                     <img src="p2.jpg" alt="Member Photo" />
                     <h3>Daniel Kusemererwa</h3>
             
@@ -84,8 +84,8 @@
                     </div>
                 </div>
 
-                <div class="member-card">
-                    <img src="p2.jpg" alt="Member Photo" />
+                <div class="member-card" onclick="toggleInfo(this)">
+                    <img src="specy.jpg" alt="Member Photo" />
                     <h3>Chelangat Specioza</h3>
             
                     <div class="member-info">
@@ -100,8 +100,8 @@
                     </div>
                 </div>
 
-                <div class="member-card">
-                    <img src="p2.jpg" alt="Member Photo" />
+                <div class="member-card" onclick="toggleInfo(this)">
+                    <img src="winnie.jpg" alt="Member Photo" />
                     <h3>Winnie Mutesi</h3>
             
                     <div class="member-info">
@@ -116,8 +116,8 @@
                     </div>
                 </div>
                 
-                <div class="member-card">
-                    <img src="p2.jpg" alt="Member Photo" />
+                <div class="member-card" onclick="toggleInfo(this)">
+                    <img src="esther.jpg" alt="Member Photo" />
                     <h3>Esther Namiiro</h3>
             
                     <div class="member-info">
@@ -142,16 +142,16 @@
         .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
         });
-        </script>
+    </script>
         <script src="header.js"></script>
-        <script>
+    <script>
             fetch('header.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('header-placeholder').innerHTML = data;
         initializeHeader();
         });
-        </script>
+    </script>
     <script src="members.js"></script>
 </body>
 </html>

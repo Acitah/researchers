@@ -1,17 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
 
-  const cards = document.querySelectorAll(".member-card");
-
-  cards.forEach((card) => {
-    card.addEventListener("click", () => {
-      cards.forEach((c) => {
-        if (c !== card) {
-          card.classList.toggle("expanded");
-         
+function toggleInfo(clickedCard) {
+    
+    const allCards = document.querySelectorAll('.member-card');
+  
+    allCards.forEach(card => {
+        if (card !== clickedCard) {
+            card.classList.remove('active');
         }
-      });
-
-        
     });
-  });
-});
+
+    clickedCard.classList.toggle('active');
+}

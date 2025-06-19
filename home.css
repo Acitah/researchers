@@ -14,12 +14,14 @@ html, body{
 /*video*/
 .video-container {
   position: relative;
-  height: 100vh;
+ 
   max-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   /* setting height according to screen*/
+  height: calc(var(--vh, 1vh) * 100);
 
 }
 
@@ -51,10 +53,24 @@ html, body{
 .hero-content p {
   font-size: 24px;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .hero-content h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
+  .hero-content p{
+    font-size: 18px;
+  }
+  body{
+    font-size: 15px;
+  }
+  .hero-content{
+    margin-top: 35px;
+    padding: 10px;
+  }
+  .video-container{
+    height: 80vh;
+  }
+  
 }
 
 /*Header*/
@@ -143,8 +159,8 @@ html, body{
 .value .dot {
   display: block;
   text-align: center;
-  font-size: 24px;
-  color:rgb(106, 176, 185);
+  font-size: 20px;
+  color:rgb(18, 101, 112);
   font-weight: 200;
   transition: opacity 0.3s ease;
   margin-bottom: 5px;
@@ -184,7 +200,7 @@ html, body{
   width: 50%;
   height: 300px; /* or adjust as needed */
   overflow: hidden;
-  border-radius:50%; /* optional for rounded image corners */
+  border-radius:30px; /* optional for rounded image corners */
 }
 
 .im img {
@@ -201,6 +217,16 @@ hr{
   .us{
     display: block;
   } 
+  .value{
+    margin: 5px;
+  }
+  .value .dot{
+    font-size: 15px;
+   
+  }
+  .value-cards{
+    display: block;
+  }
 }
 @media (max-width:1200px){ 
   .ceo{
@@ -209,6 +235,10 @@ hr{
     hr{
         display: flex;
         width: 60%;
+    }
+    .im{
+      height: 150px;
+      border-radius: 20px;
     }
 }
 section {

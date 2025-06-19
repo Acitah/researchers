@@ -73,7 +73,7 @@
                         <div class="ceo-img">
                             
                             <div class="im">
-                                <img src="abubakhari.jpeg" alt="founder">
+                                <img src="abubakhari.JPG" alt="founder">
                             </div>
                             <h4>Founder- Daimarilab</h4><hr>
                             <h2>Dr. Abubakhari Sserwadda</h2>
@@ -100,7 +100,7 @@
                 <div class="contain">
                     <div class="section-header">
                         <h2 class="section-title">Get In <span>Touch</span></h2>
-                        <p class="section-subtitle">We'd love to hear about your project</p>
+                        <p class="section-subtitle">Interested in our collaboration, data partnerships,or have any questions about our research? <br> We'd love to hear from you.</p>
                     </div>
                     
                     <div class="contact-content"> 
@@ -159,6 +159,15 @@
       document.getElementById('header-placeholder').innerHTML = data;
       initializeHeader(); // <-- only call after header is inserted
     });
+</script>
+<script>
+  function setVhUnit() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  window.addEventListener('load', setVhUnit);
+  window.addEventListener('resize', setVhUnit);
 </script>
 
 </body>
