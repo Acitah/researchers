@@ -14,18 +14,19 @@
 <body>
     <div class="page-wrapper">
         <div id="header-placeholder"></div>
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="vid1.mp4" type="video/mp4">
-            </video>
-            
-            <div class="hero-content">
-                <h2>Data science, Artificial intelligence, Machine Learning Research and Innovation lab</h2>
-                <p>Join researchers worldwide in advancing AI innovation.</p>
-            </div>
-        </div>
+         
         <!--body-->
         <div class="main-content">
+           <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="vid1.mp4" type="video/mp4">
+                </video>
+                
+                <div class="hero-content">
+                    <h2>Data science, Artificial intelligence, Machine Learning Research and Innovation lab</h2>
+                    <p>Join researchers worldwide in advancing AI innovation.</p>
+                </div>
+            </div>
             <section class="about" id="About">
                 <h6>About Us</h6>
                 <div class="us">
@@ -119,7 +120,8 @@
                             
                         </div>
                         <div class="contact-form">
-                            <form id="contactForm">
+                          <form id="contactForm" action="https://formsubmit.co/abubakhari@gmail.com" method="POST">
+                               
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                                 </div>
@@ -129,12 +131,12 @@
                                 <div class="form-group">
                                     <input type="tel" id="phone" name="phone" placeholder="Phone Number">
                                 </div>
-    
                                 <div class="form-group">
                                     <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send Message</button>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -161,13 +163,11 @@
     });
 </script>
 <script>
-  function setVhUnit() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
+  document.getElementById("contactForm").addEventListener("submit", function () {
+    this.reset(); // Clears the form fields
+  });
 
-  window.addEventListener('load', setVhUnit);
-  window.addEventListener('resize', setVhUnit);
+
 </script>
 
 </body>

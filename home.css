@@ -15,13 +15,13 @@ html, body{
 .video-container {
   position: relative;
  
-  max-height: fit-content;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
    /* setting height according to screen*/
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 700px;
 
 }
 
@@ -68,19 +68,14 @@ html, body{
     padding: 10px;
   }
   .video-container{
-    height: 80vh;
+    min-height: 80vh;
   }
   
 }
 
 /*Header*/
 
-.page-wrapper {
-  min-height: 100vh;
-  display: block;
-  
-  
-}
+
 .main-content {
     display: block;
     flex: 1;
