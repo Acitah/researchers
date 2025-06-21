@@ -21,18 +21,19 @@ h3{
   font-size: 50px;
 }
 .member-card {
-  width: 260px;
+  width: 210px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
+  max-height: fit-content;
  
 }
 
 .member-card img {
   width: 100%;
-  
+  max-height: 60%;
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -46,19 +47,20 @@ h3{
 }
 
 .member-info {
-  padding: 0 15px;
+  padding: 0 20px;
   
-  display: none;
+  display: block;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
   color: #555;
   font-size: 0.95rem;
 }
 
-.member-card.active .member-info {
+/*.member-card.active .member-info {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
-}
+  
+}*/
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
